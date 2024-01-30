@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="product1.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="icon" type="image/png" href="signature.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header id="primary-header">
+        <div id="left" class="divEdit">
+        <img src="signature.png" >
+        <ul>
+            <li>MEN</li>
+            <li>WOMEN</li>
+            <li>KIDS</li>
+            <li>HOME & LIVING</li>
+            <li>BEAUTY</li>
+            <li id="li-new">STUDIO</li>
+        </ul>
+
+        </div>
+
+
+        <div id="right" class="divEdit">
+            <input type="text" placeholder="Search for products, brands and more">
+
+            <div>
+                <i class="fa-regular fa-user" style="color: #fafafa;"></i>
+                <p style="color: white;">Profile</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart" style="color: #fafafa;"></i>
+                <p style="color: white;">Wishlist</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-chess-bishop" style="color: #fafafa;"></i>
+                <p style="color: white;">Shop</p>
+            </div>
+
+        </div>
+    </header>
+
+    <header id="small-header">
+        <div id="left" class="divEdit">
+        <img src="signature.png" >
+
+        <div id="hamburger" onclick="myFunction()">
+            <i  id="hamburger" class="fa-solid fa-bars" style="color: #ffffff;"></i>
+         </div>
+
+         <div id="small-right" class="divEdit">
+            <input type="text" placeholder="Search">
+
+ 
+
+        </div>
+
+    </header>
+
+    <br><br>
+    <br>
+    <div id="initial" class="white">
+        <a href="index.html" ><p>HOME</p></a>
+        <p>></p>
+        <p style="font-weight: bold;">SHOP</p>
+    </div>
+
+    <div id="parent">
+        <div class="imgs">
+            <img src="img-left.png" id="product-img1"class="product-img product-img1" alt="">
+        </div>
+
+        <div class="imgs">
+            <img src="img-right12.png" id="product-img2"class="product-img product-img2"  alt="">
+        </div>
+                    
+        <div id="text-info">
+            <!-- <img src="img-left.png" alt=""> -->
+            <div>
+                <h3 class="white">THE BODY SHOP</h3>
+                <h3 style="font-weight: 400; color: rgb(167, 171, 187);">Moringa Sustainable Body Butter for Dry Skin 200 ml</h3>
+
+                <div id="rating" class="white">
+                    <p class="rounded-corners"> <b>4.6 ★ </b> ┃ 0 Ratings</p>
+                </div>
+
+                <hr>
+            </div>
+
+
+
+
+
+
+            <div id="imgs2">
+                <div>
+                    <img src="img-left.png" id="product-img1"class="product-img product-img1" alt="">
+                </div>
+        
+                <div>
+                    <img src="img-right12.png" id="product-img2"class="product-img product-img2" alt="">
+                </div>
+            </div>
+
+
+
+
+            <div>
+                <h3 class="white">Rs. 1495</h3>
+                <h5 style="margin: 0.5vh 0vw 0vh 0vh;"class="white">inclusive of all taxes</h5>
+                <div class="white">
+                    <p style="font-size: small;">Available in <b>2 Shades</b></p>
+            </div>
+
+            <div id="product-img-ref-div">
+                    <img src="img-right.png" id="product-img-ref1"class="product-img-ref product-img-ref1" alt="">
+                    <img src="img-left.png" id="product-img-ref2"class="product-img-ref product-img-ref2" alt="">
+                    
+            </div>
+
+            <!-- </div> -->
+
+            <div id="select-size" class="white">
+                <h5>SELECT SIZE</h5>
+
+                <h5 id="ML">150-200 ML</h5>
+            </div>
+            <BR>
+            <div id="buttons">
+                <button id="button1" class="rounded-corners white bag" onclick="bags()" >  <h5>ADD TO BAG</h5> </button>
+                <button id="button1-small" class="rounded-corners white bag non" onclick="bags()">  <h5>BAG</h5> </button>
+                <button id="button11" class="rounded-corners white bag non" onclick="">  <h5>BAG</h5> </button>
+            
+                <button id="button2" class="rounded-corners wish" onclick=""> <h5>WISHLIST</h5> </button>
+                <button id="button2-small" class="rounded-corners wish non" onclick=""> <h5>WISH</h5> </button>
+            </div>
+            <div class="white"><p>This item cannot be returned.</p></div>
+            <hr>
+
+            <!-- <div class="white">
+                <h5>₹ 1495</h5>
+            </div> -->
+            <div id="delivery">
+
+                <h5 class="white">DELIVERY OPTIONS</h5>
+                
+                <form id="form1" class="rounded-corners">
+
+                    <input id="pincode" type="text" placeholder="Enter pincode">
+
+                    <input id="pincode-small" type="text" class="non" placeholder="PIN">
+                    
+                    <button >Check</button>
+                    
+                </form>
+  
+                <p class="white">Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
+
+            </div>
+            <hr>
+
+            <div class="white">
+                <p><b>Expiry Date</b> 31 May 2025</p>
+            </div>
+            <hr>
+            <div id="product-list" class="white">
+                
+                <h5>PRODUCT DETAILS</h5>
+                <p>Moringa Body Butter</p>
+                <ul>
+                    <li>Dip into Moringa Body Butter for a sublimely nourishing treat. Enriched with handpicked moringa seed oil, your skin will feel more soft and supple after every use.</li>
+                    <li>Body moisturiser</li>
+                    <li>Moisturises for 24hr hydration</li>
+                    <li>Nourishes skin</li>
+                    <li>For dry skin</li>
+                    <li>Skin is left feeling softer & more supple</li>
+                    <li>Easily absorbed</li>
+                    <li>Fresh, green floral scent</li>
+                    <li>For dry skin</li>
+                    <li>Floral scent</li>
+                </ul>
+
+
+            </div>
+
+        </div>
+           
+    </div>
+
+
+    <div id="parent2">
+
+         <div id="details-top1">
+            <h3 class="white">THE BODY SHOP</h3>
+            <h3 style="font-weight: 400; color: rgb(167, 171, 187);">Moringa Sustainable Body Butter for Dry Skin 200 ml</h3>
+
+            <div id="rating" class="white">
+                <p class="rounded-corners"> <b>4.6 ★ </b> ┃ 0 Ratings</p>
+            </div>
+
+            <hr>
+
+            
+
+    </div>
+
+    <script src="product1.js"></script> 
+    <script src="hrllo.js"></script> 
+</body>
+</html>

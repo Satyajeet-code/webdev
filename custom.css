@@ -1,0 +1,262 @@
+#li-new{
+    position:relative;
+}
+
+
+#li-new::after{
+    content:'NEW';
+    position: absolute;
+    top:3%;
+    left: 3.2rem;
+  
+    width: 0.5vw;
+    height: 1vh;
+   color: red;
+   font-size: x-small;
+   /* right:rem; */
+
+}
+
+#left{
+    padding-left: 5vw;
+   
+}
+
+#right{
+    padding-left: 6vw;
+}
+
+#right div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left:2vw
+}
+
+#right div p{
+    margin: 0;
+
+}
+
+header div input::placeholder::before{
+    content:'NEW';
+    position: absolute;
+    top:3%;
+    /* left: 3.2rem; */
+    border-radius: 50%;
+    width: 0.5vw;
+    height: 1vh;
+   color: red;
+   font-size: x-small;
+
+}
+
+.banners img{
+    width: 100%;
+}
+
+
+
+.hidden{
+    display:none;
+}
+
+.dot {
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin: 0 2px;
+    /* background-color: #bbb; */
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+
+#dot1{
+    background-color: #bbb;
+}
+
+#dot2{
+    background-color: rgb(34, 34, 34);
+}
+
+#carousal{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+/* #carousal div{
+    padding:2vh 2vw 2vh 2.5vw;
+}
+#carousal div img{
+    width: 20vw;
+    border-radius: 5px;
+} */
+
+#float{
+    background-color: #838383;
+    width: 20vw;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: 87.8vw;
+    margin-top: -20vh;
+    position: fixed;
+    transform: rotate(270deg);
+    opacity: 0.8;
+    /* filter: blur(1px); */
+}
+#small-float{
+    display: none;
+    background-color: #838383;
+    width: 20vw;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: 87.8vw;
+    margin-top: -10vh;
+    position: fixed;
+    transform: rotate(270deg);
+    opacity: 0.8;
+}
+#float p{
+    padding:1vh 1vw 1vh 6vw;
+    color: black;
+    font-size: large;
+    font-weight: 500;
+    margin: 0;
+    
+}
+#float:hover{
+    background-color: white;
+}
+
+
+#carousal div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12vw;
+    background-color: white;
+    padding:2vh 2vw 2vh 2vw;
+    margin:2vh 2vw 2vh 2.5vw;
+   
+    border-radius: 10px;
+}
+#carousal div img{
+    width: 14vw;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#carousal div img:hover{
+    width: 18vw;
+    transition: width 0.6s ease;
+    
+}
+#carousal div:hover{
+    background-color: rgb(193, 192, 192) ;
+    transition: background-color 0.6s ease;
+    
+}
+
+#small-header{
+    display: none;
+}
+
+#hamburger{
+    padding: 0vh 0vw 0vh 4vw;
+    font-weight: bold;
+    font-size: large;
+}
+
+#hamburger-menu{
+   /* margin: 0vh 10vw 0vh 0vw;
+    */
+    margin-left: 5vw;
+    
+
+}
+
+.product{
+    padding-right: 4.2vw !important;
+}
+
+#hamburger-menu div {
+    padding-bottom: 5vw;
+}
+#hamburger-menu div i{
+    padding-right: 5vw;
+    padding-top: 0.5vh;
+}
+
+#hamburger-menu div p{
+    margin: 0;
+    font-weight: 600;
+}
+#product1{
+    display: none;
+}
+#hompepage{
+    display: none;
+}
+
+@media only screen and (max-width: 415px) {
+
+    #carousal div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20vw;
+        height: 12vh;
+        background-color: white;
+        padding:2vh 2vw 2vh 2vw;
+        margin:2vh 2vw 2vh 2.5vw;
+       
+        border-radius: 10px;
+    }
+
+    #carousal div img{
+        height:10vh;
+        width: 20vw;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    /* body {
+      background-color: lightblue;
+    } */
+    #primary-header{
+        display: none;
+    }
+    #small-header{
+        display: block;
+     
+    }
+    #right{
+        display: none;
+    }
+    #small-right{
+        padding: 0.8vh 0vw 0vh 20vw;
+    }
+    #float{
+    display: none;
+    }
+    #small-float{
+        display: flex;
+        color: black;
+        font-size: large;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
+        margin: 20vh 0vw 0vh 85vw;
+        height: 4vh;
+        width: 25vw;
+        /* opacity: 0.5; */
+    }
+
+
+  }
+

@@ -1,0 +1,291 @@
+body{
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    background-color: rgb(64, 64, 64);
+}
+.white{
+    color: white;
+}
+
+.flexprop{
+    display:flex;
+}
+.margin0{
+    margin:0
+}
+#initial{
+    display: flex;
+    font-weight: 500;
+    
+}
+
+
+#initial p{
+    cursor:pointer;
+    padding: 0vh 1vw 0vh 1vw;
+}
+#initial a p{
+    cursor:pointer;
+    padding: 0vh 1vw 0vh 1vw;
+    color: white; 
+    text-decoration: none;
+}
+#initial a p:hover{
+   
+    font-size: large;
+    transition: font-size 0.3s ease-in-out;
+}
+
+    
+
+#parent{
+    display: flex;
+    
+}
+#parent2{
+    display:none;
+}
+.imgs{
+    /* display: flex;
+     */
+     padding: 0vh 0vw 0vh 0.5vw;    
+}
+
+#imgs2{
+    display:none;
+}
+
+.product-img{
+    width: 25vw;
+    
+}
+
+#text-info{
+    padding: 0vh 0vw 0vh 2vw ;
+    margin: 0;
+    /* padding-left: 2vw; */
+    /* border: 2px solid red; */
+}
+#text-info h3{
+    margin: 0;
+}
+
+#rating{
+    
+    padding: 2vh 0vw 2vh 0vw;
+}
+
+
+#rating p{
+    display: inline;
+    border: 1px solid #bbb;
+    padding: 0.01vh 0.3vw 0.4vh 0.3vw;
+    
+}
+#rating p:hover{
+    border: 1px solid #040404;
+    transition: border 0.3s ease-in;
+}
+
+#product-img-ref-div{
+    display: flex;
+}
+.product-img-ref{
+    width: 2vw;
+    padding: 0vh 1vw 0vh 0vw;
+}
+
+
+
+#ML{
+    cursor: pointer;
+    padding: 0.5vw;
+    display: inline;
+    color: rgb(250, 88, 88);
+    border: 1px solid rgb(250, 88, 88);
+    border-radius: 30px;
+}
+#ML:hover{
+   background-color: white;
+   transition: background-color 0.3s ease-in;
+}
+
+#buttons{
+    margin: 1vh 0vw 0vh 0vw;
+}
+
+.rounded-corners{
+    border-radius: 5px;
+}
+
+.bag{
+    cursor: pointer;
+    background-color: rgb(250, 88, 88);
+    width: 15vw;
+    border: 1px solid rgb(250, 88, 88);
+}
+
+.bag:hover{
+    cursor: pointer;
+    background-color: rgb(250, 248, 248);
+    width: 15vw;
+    border: 1px solid rgb(250, 248, 248);
+    color: black;
+    transition: background-color 0.3s ease-in,color 0.3s ease-in;
+    
+}
+
+.non{
+    display: none;
+}
+
+.wish{
+    width:10vw;
+    border: 1px solid rgb(248, 247, 247);
+    cursor: pointer;
+}
+
+.wish:hover{
+    width:10vw;
+    background-color: rgb(250, 88, 88);
+    cursor: pointer;
+    border: 1px solid rgb(250, 88, 88);
+    color: white;
+    transition: background-color 0.3s ease-in,color 0.3s ease-in
+}
+
+
+#seller-div{
+    /* margin: 0vh 10vw 0vh 0vw;
+     */
+     margin-right: 10vw;
+}
+
+#delivery h5{
+    margin: 3vh 0vw 2vh 0vw;
+}
+#delivery p{
+    margin: 1vh 0vw 2.15vh 0vw;
+    font-size: small;
+}
+form{
+    border:2px solid rgb(180, 179, 179);
+    width:10rem;
+   
+    
+}
+form input{
+    height: 4vh;
+    width: 6vw;
+    border: 0;
+    background-color: rgb(64, 64, 64);
+    margin-left: 0.5vw;
+    
+}
+
+form button{
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(64, 64, 64);
+    color: rgb(250, 88, 88);
+    
+}
+
+form button:hover{
+    color: rgb(249, 246, 246);
+    transition:color 0.3s ease-in;
+}
+
+
+
+@media only screen and (max-width: 556px) {
+
+    /* #parent{
+        display:none;
+    }
+   #parent2{
+    display: flex;
+   } */
+
+
+   .imgs{
+    display: none;
+   }
+   #imgs2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   }
+   #product-img-ref-div{
+    display: none;
+   }
+#initial{
+    padding: 10vh 0vw 0vh 0vw;
+}
+#button1{
+    display: none;
+}
+
+#button1-small{
+    display: inline-block;
+}
+#button2{
+    display: none;
+}
+
+#button2-small{
+    display: inline-block;
+}
+#pincode{
+    display: none;
+}
+
+#pincode-small{
+    display: inline-block;
+}
+#form1 input{
+    width:18vw;
+}
+/* #form1 button{
+    padding-left:8vw;
+} */
+
+}
+
+@media only screen and (max-width: 840px) {
+ 
+    #initial{
+        padding: 1em 0vw 0vh 0vw;
+    }
+    #button1{
+        display: none;
+    }
+    
+    #button1-small{
+        display: inline-block;
+    }
+    #button2{
+        display: none;
+    }
+    
+    #button2-small{
+        display: inline-block;
+    }
+    #pincode{
+        display: none;
+    }
+    
+    #pincode-small{
+        display: inline-block;
+    }
+    #form1 input{
+        width:6vw;
+    }
+    #form1 button{
+        padding-left:4vw;
+    }
+    
+
+  }
+
+ 
